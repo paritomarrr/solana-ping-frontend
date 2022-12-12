@@ -11,7 +11,7 @@ const Home: NextPage = (props) => {
   return (
     <div className={styles.App}>
       <Head>
-        <title>Wallet-Adapter Example</title>
+        <title style={{fontFamily: 'sans-serif'}}>Wallet-Adapter</title>
         <meta
           name="description"
           content="Wallet-Adapter Example"
