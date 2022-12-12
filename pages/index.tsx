@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css'
 import WalletContextProvider from '../components/WalletContextProvider'
 import { AppBar } from '../components/AppBar'
 import { BalanceDisplay } from '../components/BalanceDisplay'
-import { PingButton } from '../components/PingButton'
+import { SendSolForm } from '../components/SendSolForm'
 import Head from 'next/head'
 
 const Home: NextPage = (props) => {
@@ -20,10 +20,15 @@ const Home: NextPage = (props) => {
       <WalletContextProvider>
         <AppBar />
         <div className={styles.AppBody}>
-          <PingButton />
+          <BalanceDisplay />
+          <SendSolForm />
         </div>
       </WalletContextProvider >
+      <footer>
+        <p className={styles.AppBody}>Made by <a style={{textDecoration: 'none', color: 'cyan'}} href='https://twitter.com/tomarpari90'>Pari Tomar</a></p>
+      </footer>
     </div>
+
   );
 }
 
